@@ -1,0 +1,664 @@
+{
+	"info": {
+		"_postman_id": "0e547410-e1f3-432a-ab7a-f596164e3be1",
+		"name": "TASK01-DAZN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9959370"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1337/api/user/addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Ganesh@12345\",\r\n    \"email\": \"gganesh@paccore.com\",\r\n    \"password\": \"Ganesh@12345\",\r\n    \"roleType\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:1337/api/user/addUser"
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/user/addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Ganesh@1234\",\r\n    \"email\": \"gganesh@paccore.com\",\r\n    \"password\": \"Ganesh@1234\",\r\n    \"roleType\":\"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/user/addUser"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "295"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"127-XwQcEbH7w1mVSVrs9tzsh1qdAew\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 12:07:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userobj\": {\n        \"userName\": \"Ganesh@1234\",\n        \"email\": \"gganesh@paccore.com\",\n        \"roleType\": \"user\",\n        \"password\": \"$2b$10$GHoJSaerhfIM00yGkhwse.eK4Ih.1tkq5DiuyzWagh0kAEonoFit6\",\n        \"isActive\": true,\n        \"createdAt\": \"2024-01-20T12:06:57.640Z\",\n        \"updatedAt\": \"2024-01-20T12:06:57.640Z\",\n        \"_id\": \"65abb76f85649328992d6bbd\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "http://localhost:1337/api/user/addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Ganesh@12345\",\r\n    \"email\": \"gganesh@paccore.com\",\r\n    \"password\": \"Ganesh@12345\",\r\n    \"roleType\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/user/addUser"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"129-g+OSx0X6iHfKMrmzS6LTB5qgplo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 14:12:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userobj\": {\n        \"userName\": \"Ganesh@12345\",\n        \"email\": \"gganesh@paccore.com\",\n        \"roleType\": \"admin\",\n        \"password\": \"$2b$10$R9wonE4fOJ08aZlanxsAluHkREXR8wnwNmFO7tYw/F9/FPvKm1vlW\",\n        \"isActive\": true,\n        \"createdAt\": \"2024-01-20T14:10:48.966Z\",\n        \"updatedAt\": \"2024-01-20T14:10:48.966Z\",\n        \"_id\": \"65abd4cc98e40e558282d038\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1337/api/user/userLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Ganesh@1234\",\r\n     \"password\": \"Ganesh@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:1337/api/user/userLogin"
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/user/userLogin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Ganesh@1234\",\r\n     \"password\": \"Ganesh@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/user/userLogin"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "823"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"337-9rWb6Ak1l6m5Iuz2K1jefnqNMVM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 12:27:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyT2JqIjp7Il9pZCI6IjY1YWJiNzZmODU2NDkzMjg5OTJkNmJiZCIsInVzZXJOYW1lIjoiR2FuZXNoQDEyMzQiLCJlbWFpbCI6ImdnYW5lc2hAcGFjY29yZS5jb20iLCJyb2xlVHlwZSI6InVzZXIiLCJwYXNzd29yZCI6IiQyYiQxMCRHSG9KU2FlcmhmSU0wMHlHa2h3c2UuZUs0SWguMXRrcTVEaXV5eldhZ2gwa0FFb25vRml0NiIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDI0LTAxLTIwVDEyOjA2OjU3LjY0MFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTAxLTIwVDEyOjA2OjU3LjY0MFoiLCJfX3YiOjB9LCJpYXQiOjE3MDU3NTM2NjUsImV4cCI6MTcwNTg0MDA2NX0.xguqiwD1hh6mytOkMRNhr48boEK0VGthrU7aBbd09XU\",\n    \"data\": {\n        \"_id\": \"65abb76f85649328992d6bbd\",\n        \"userName\": \"Ganesh@1234\",\n        \"email\": \"gganesh@paccore.com\",\n        \"roleType\": \"user\",\n        \"password\": \"$2b$10$GHoJSaerhfIM00yGkhwse.eK4Ih.1tkq5DiuyzWagh0kAEonoFit6\",\n        \"isActive\": true,\n        \"createdAt\": \"2024-01-20T12:06:57.640Z\",\n        \"updatedAt\": \"2024-01-20T12:06:57.640Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1337/api/movie/addMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Nenokkadine\",\r\n    \"genre\":\"Action\",\r\n    \"releaseYear\":2014,\r\n    \"director\":\"Sukumar\",\r\n    \"streamingLink\":\"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\r\n    \"rating\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:1337/api/movie/addMovie"
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/movie/addMovie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Nenokkadine\",\r\n    \"genre\":\"Action\",\r\n    \"releaseYear\":2014,\r\n    \"director\":\"Sukumar\",\r\n    \"streamingLink\":\"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\r\n    \"rating\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/movie/addMovie"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "277"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"115-YlHRy07iMBrKulgcLLWxSvAY528\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 13:07:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"title\": \"Nenokkadine\",\n        \"genre\": \"Action\",\n        \"rating\": 4,\n        \"releaseYear\": 2014,\n        \"streamingLink\": \"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\n        \"createdAt\": \"2024-01-20T13:05:51.708Z\",\n        \"updatedAt\": \"2024-01-20T13:05:51.708Z\",\n        \"isActive\": true,\n        \"_id\": \"65abc57c51498db696abf1ed\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "http://localhost:1337/api/movie/addMovie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Maharshi\",\r\n    \"genre\":\"love\",\r\n    \"releaseYear\":2019,\r\n    \"director\":\"Vamshi Paidipally\",\r\n    \"streamingLink\":\"https://www.youtube.com/watch?v=2wGSKHW2PvI\",\r\n    \"rating\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/movie/addMovie"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "279"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"117-G+hHksvPL2inTs5QQtsf44ZxeU8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 13:10:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"title\": \"Bharat Ane Nenu\",\n        \"genre\": \"love\",\n        \"rating\": 4,\n        \"releaseYear\": 2018,\n        \"streamingLink\": \"https://www.youtube.com/watch?v=2wGSKHW2PvI\",\n        \"createdAt\": \"2024-01-20T13:05:51.708Z\",\n        \"updatedAt\": \"2024-01-20T13:05:51.708Z\",\n        \"isActive\": true,\n        \"_id\": \"65abc64d51498db696abf1f0\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "http://localhost:1337/api/movie/addMovie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Nenokkadinerr5\",\r\n    \"genre\":\"Actionrr5\",\r\n    \"releaseYear\":2014,\r\n    \"director\":\"Sukumarrr5\",\r\n    \"streamingLink\":\"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\r\n    \"rating\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:1337/api/movie/addMovie"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11b-Eg/D6SCKDcdNvxad3mircYMf55A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 14:57:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"title\": \"Nenokkadinerr5\",\n        \"genre\": \"Actionrr5\",\n        \"rating\": 4,\n        \"releaseYear\": 2014,\n        \"streamingLink\": \"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\n        \"createdAt\": \"2024-01-20T14:55:26.903Z\",\n        \"updatedAt\": \"2024-01-20T14:55:26.903Z\",\n        \"isActive\": true,\n        \"_id\": \"65abdf614b7032e71808f065\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1337/api/movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:1337/api/movie"
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:1337/api/movie"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "548"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"224-dCzDad1SWOdzj+aQTqDasPCYMIc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 13:29:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"65abc57c51498db696abf1ed\",\n            \"title\": \"Nenokkadine\",\n            \"genre\": \"Action\",\n            \"rating\": 4,\n            \"releaseYear\": 2014,\n            \"streamingLink\": \"https://www.youtube.com/watch?v=h-BcTt_yu8Y\",\n            \"createdAt\": \"2024-01-20T13:05:51.708Z\",\n            \"updatedAt\": \"2024-01-20T13:05:51.708Z\",\n            \"isActive\": true,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65abc64d51498db696abf1f0\",\n            \"title\": \"Bharat Ane Nenu\",\n            \"genre\": \"love\",\n            \"rating\": 4,\n            \"releaseYear\": 2018,\n            \"streamingLink\": \"https://www.youtube.com/watch?v=2wGSKHW2PvI\",\n            \"createdAt\": \"2024-01-20T13:05:51.708Z\",\n            \"updatedAt\": \"2024-01-20T13:05:51.708Z\",\n            \"isActive\": true,\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1337/api/movie/search?q=ma",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/movie/search?q=ma",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"movie",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ma"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/movie/search?q=ma",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/movie/search?q=ma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"movie",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "ma"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "273"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"111-D11Kvg6Gr8ycL9kzYsm8RaG7guk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 13:52:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"65abcb8f2f0185c8bc43ab23\",\n            \"title\": \"Maharshi\",\n            \"genre\": \"love\",\n            \"rating\": 4,\n            \"releaseYear\": 2019,\n            \"streamingLink\": \"https://www.youtube.com/watch?v=2wGSKHW2PvI\",\n            \"createdAt\": \"2024-01-20T13:30:09.218Z\",\n            \"updatedAt\": \"2024-01-20T13:30:09.218Z\",\n            \"isActive\": true,\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1337/api/movie/updateMovie/65abd22084f257e048f0984c",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Maharshitt\",\r\n    \"genre\": \"love it\",\r\n    \"rating\": 4,\r\n    \"releaseYear\": 2019,\r\n    \"streamingLink\": \"https://www.youtube.com/watch?v=2wGSKHW2PvI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:1337/api/movie/updateMovie/65abd22084f257e048f0984c"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/movie/deleteMovie/65abd22084f257e048f0984c",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:1337/api/movie/deleteMovie/65abd22084f257e048f0984c"
+			},
+			"response": [
+				{
+					"name": "http://localhost:1337/api/movie/deleteMovie/65abd22084f257e048f0984c",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:1337/api/movie/deleteMovie/65abd22084f257e048f0984c"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"129-cCFNEArfAQ4QtXf5Q2jZPQMzdpM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jan 2024 14:10:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"_id\": \"65abd22084f257e048f0984c\",\n        \"title\": \"Maharshitt\",\n        \"genre\": \"love it\",\n        \"rating\": 4,\n        \"releaseYear\": 2019,\n        \"streamingLink\": \"https://www.youtube.com/watch?v=2wGSKHW2PvI\",\n        \"createdAt\": \"2024-01-20T13:59:31.211Z\",\n        \"updatedAt\": \"2024-01-20T13:59:31.211Z\",\n        \"isActive\": true,\n        \"__v\": 0\n    },\n    \"message\": \"Deleted\"\n}"
+				}
+			]
+		}
+	]
+}
