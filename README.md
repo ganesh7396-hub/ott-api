@@ -1,3 +1,3 @@
 # ott-api
 Typescript application
-> nodemon
+cmd nodemon
